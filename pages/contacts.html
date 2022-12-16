@@ -29,52 +29,56 @@
     <h1>Контакты</h1>
 
     <div class="contacts-adress">
-      <h2 class="h2-contacts">Наш адрес до начала войны</h2>
+      <h2 class="contacts-title">Наш адрес до начала войны</h2>
       <p class="p-contacts">Украина, г.Харьков,</p>
       <p class="p-contacts">улица Руслана Плоходька, 2.</p>
       <hr>
     </div>
 
-    <div class="contacts-map">
-      <h2 class="h2-contacts">Как добраться</h2>
-      <iframe class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0651957324894!2d36.34876121521717!3d49.99138812822535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709893a4b0a71%3A0x98f8ecc197c974e4!2z0YPQuy4g0KDRg9GB0LvQsNC90LAg0J_Qu9C-0YXQvtC00YzQutC-LCAyLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDYxMDAw!5e0!3m2!1sru!2sus!4v1668553645686!5m2!1sru!2sus"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-    <hr>
+    <div class="contacts">
+      <div class="contacts-map">
+        <h2 class="contacts-title">Как добраться</h2>
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.0651957324894!2d36.34876121521717!3d49.99138812822535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709893a4b0a71%3A0x98f8ecc197c974e4!2z0YPQuy4g0KDRg9GB0LvQsNC90LAg0J_Qu9C-0YXQvtC00YzQutC-LCAyLCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDYxMDAw!5e0!3m2!1sru!2sus!4v1668553645686!5m2!1sru!2sus"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <hr>
 
-    <div class="contacts__feedback">
-      <h2 class="h2-contacts">Обратная связь</h2>
-      <form class="contacts__form" action="https://tests.fomenko.top/echo/index.php" method="post">
-        <fieldset>
+      <div class="contacts-feedback">
+        <h2 class="contacts-title">Обратная связь</h2>
+        <form class="contacts-form" action="https://tests.fomenko.top/echo/index.php" method="post">
+          <fieldset>
 
-          <div class="contacts__item">
-            <label>Ваше имя</label>
-            <input name="name" type="text" placeholder="Введите имя" autofocus="">
-          </div>
+            <div class="form-group">
+              <label>Ваше имя</label>
+              <input name="name" type="text" placeholder="Введите имя" autofocus="">
+            </div>
 
-          <div class="contacts__item">
-            <label>Контактный телефон</label>
-            <input name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
-              placeholder="Ваш телефон в формате 380-XXXXX-XXXX">
-          </div>
+            <div class="form-group">
+              <label>Контактный телефон</label>
+              <input name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
+                placeholder="Ваш телефон в формате 380-XXXXX-XXXX">
+            </div>
 
-          <div class="contacts__item">
-            <label>Email</label>
-            <input name="email" type="email" placeholder="Ваш e-mail">
-          </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input name="email" type="email" placeholder="Ваш e-mail">
+            </div>
 
-          <div class="contacts__item"><label>Вопрос</label>
-            <textarea class="contacts__form-textarea" name="question" id="text-field" cols="40" rows="7"
-              placeholder="Задайте нам свой вопрос"></textarea>
-          </div>
+            <div class="form-group"><label>Вопрос</label>
+              <textarea class="contacts-textarea" name="question" id="text-field" cols="40" rows="7"
+                placeholder="Задайте нам свой вопрос"></textarea>
+            </div>
 
-          <button type="submit">Отправить</button>
-        </fieldset>
+            <div class="form-group">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
 
-      </form>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </div>
 

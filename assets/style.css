@@ -109,7 +109,9 @@ h1 {
   box-sizing: border-box;
 
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+
+  color: #241f1d;
 }
 
 a,
@@ -127,41 +129,25 @@ p {
   font-size: 23px;
 }
 
-.footer__copyright,
-.header__navbar,
-.container,
-.container-navbar {
+.container {
   width: 100%;
   max-width: 1280px;
+  min-height: 100vh;
+
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
-}
 
-.container,
-.container-navbar {
-  min-height: 100vh;
-  padding-top: 160px;
-  padding-bottom: 120px;
+  padding: 60px 30px 160px 30px;
 
   text-align: justify;
-
   font-size: 1rem;
-}
 
-.container {
   background-color: rgba(255, 255, 255, 0.8);
-}
-
-.container-navbar {
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* !!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!! */
 
 .header {
-  position: fixed;
   display: flex;
 
   flex-wrap: wrap;
@@ -470,7 +456,11 @@ p {
 
 /*  !!!!!!!!!!!!!!!! CONTACTS !!!!!!!!!!!!!!!! */
 
-.h2-contacts {
+.contacts {
+  text-align: center;
+}
+
+.contacts-title {
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
@@ -486,8 +476,8 @@ p {
 }
 
 hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .map {
@@ -500,16 +490,16 @@ hr {
   text-transform: uppercase;
 }
 
-.contacts__item {
+.contacts-item {
   display: flex;
   justify-content: space-between;
 }
 
-.contacts__item label {
+.contacts-item {
   min-width: 200px;
 }
 
-.contacts .contacts__form button {
+.btn {
   position: relative;
   background-color: #cdc5ba;
   text-transform: uppercase;
@@ -522,25 +512,20 @@ hr {
   margin: 0;
 }
 
-button {
-  margin: 20px 0;
-  padding: 10px 10px;
-  border-radius: 10px;
-}
-
 .contacts__item {
   padding-top: 20px;
 }
 
-.form-group,
-.p-reg {
-  margin-top: 10px;
+.form-group {
+  margin: 15px 0 5px;
   font-size: 21px;
   text-align: left;
 }
 
 .p-reg {
   padding-bottom: 20px;
+  font-size: 21px;
+  text-align: left;
 }
 
 legend {
@@ -616,43 +601,48 @@ legend {
 
 .navbar-h2 {
   text-align: center;
-  padding: 10px;
-  font-size: 60px;
-  color: wheat;
+  padding: 10px 0 0 0;
+  font-size: 55px;
+  color: #39302b;
   text-decoration: none;
   font-family: "HarryPotterRegular";
 }
 
 .navbar-h3 {
   text-align: center;
-  padding: 10px;
-  font-size: 40px;
-  color: white;
-
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
   font-size: 30px;
+  color: black;
+
+  padding: 10px 0;
   margin: 0 auto;
-  padding-right: 20px;
-  color: white;
 }
 
 .navbar-chapter {
   text-align: center;
   margin: 0 auto;
-  font-size: 30px;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar-chapter-link {
-  padding-top: 20px;
-  color: white;
+  padding-top: 10px;
+  color: black;
   text-decoration: none;
   list-style-type: none;
   margin: 0 auto;
-  padding-right: 20px;
+
+
+  text-align: center;
+}
+
+.navbar-a-text {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+
+  text-align: center;
 }
 
 .a-nav {
@@ -662,13 +652,6 @@ legend {
   text-decoration: none;
   color: darkgray;
   font-size: 20px;
-}
-
-.navbar-a-text {
-  list-style: none;
-  text-decoration: none;
-  color: darkgray;
-  font-size: 36px;
 }
 
 a:hover {
@@ -690,6 +673,7 @@ a:hover {
 .nav-p {
   text-align: justify;
   font-size: 30px;
+  color: #39302b;
 }
 
 /*  !!!!!!!!!!!!!!!! REGISTRATION !!!!!!!!!!!!!!!! */
@@ -697,10 +681,10 @@ a:hover {
 fieldset {
   max-width: 800px;
   margin: 25px auto;
-  background-color: rgb(194, 183, 173);
-  opacity: 100%;
-  border-radius: 12px;
-  box-shadow: 5px 10px 40px #241f1d;
+  background-color: rgb(194, 183, 173, 0.9);
+  text-align: left;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 select,
@@ -730,6 +714,14 @@ legend {
   transform: translateY(-10px);
 }
 
+label {
+  font-size: 17px;
+}
+
+.p-reg {
+  font-size: 18px;
+}
+
 .form-group:not(:first-of-type) {
   margin: 15px 0 5px;
 }
@@ -745,19 +737,6 @@ legend {
 .btn {
   width: 100%;
   padding: 10px 20px;
-  font-size: 18px;
-}
-
-.label-form,
-.form-group-sm {
-  text-align: left;
-  font-size: 20px;
-}
-
-legend {
-  font-size: 28px;
-  padding-bottom: 20px;
-  padding-top: 30px;
 }
 
 /* !!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!! */

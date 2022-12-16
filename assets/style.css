@@ -508,8 +508,8 @@ hr {
   color: #ffffff;
   cursor: pointer;
   height: 40px;
-  width: 130px;
-  margin: 0;
+  width: 100%;
+  padding: 10px 20px;
 }
 
 .contacts__item {
@@ -732,11 +732,6 @@ label {
 
 .hidden {
   display: none;
-}
-
-.btn {
-  width: 100%;
-  padding: 10px 20px;
 }
 
 /* !!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!! */

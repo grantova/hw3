@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+body {
+  zoom: 75%
+}
+
 .page-main,
 .page-article,
 .page-catalog,
@@ -84,7 +88,8 @@
 
 .page-registration {
   background-image: url(../img/book.jpg);
-  background-position: 0% 35%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-contacts {
@@ -259,7 +264,7 @@ p {
   flex-direction: column;
   justify-content: center;
   width: 33%;
-  height: 50%;
+  height: 65%;
 
   background-size: cover;
   font-size: 35px;

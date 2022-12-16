@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body class="page-registration">
+
+  <div class="header">
+    <ul class="header__navbar">
+      <li class="header__navbar-item"><a href="../index.html" class="header__navbar-link">Главная</a></li>
+      <li class="header__navbar-item"><a href="articles.html" class="header__navbar-link">Статьи</a></li>
+      <li class="header__navbar-item"><a href="catalog.html" class="header__navbar-link">Каталог</a></li>
+      <li class="header__navbar-item"><a href="contacts.html" class="header__navbar-link">Контакты</a></li>
+      <li class="header__navbar-item"><a href="gallery.html" class="header__navbar-link">Галерея</a></li>
+      <li class="header__navbar-item"><a href="page-nav.html" class="header__navbar-link">Навигация</a></li>
+      <li class="header__navbar-item"><a href="registration.html"
+          class="header__navbar-link   header__navbar-link--active">Регистрация</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+
+    <h1>Регистрация</h1>
+
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+      <fieldset>
+        <legend>Основная информация</legend>
+
+        <p class="p-reg">Укажите следующие данные:</p>
+
+        <div class="form-group">
+          <label class="label-form" for="surname">Фамилия</label>
+          <input class="input-name" id="surname" name="txt-surname" type="text" placeholder="Ваша фамилия">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="name">Имя</label>
+          <input id="name" name="txt-name" type="text" placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="lastname">Отчество</label>
+          <input id="lastname" name="txt-lastname" type="text" placeholder="Ваше отчество">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="photo">Фотография</label>
+          <input id="photo" name="photo" type="file">
+        </div>
+        <div class="form-group">
+          <label for="email">Почта"</label>
+          <input id="email" name="email" type="email" placeholder="Электронная почта">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="password">Пароль</label>
+          <input id="password" name="txt-password" value="" type="password" placeholder="Введите пароль">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="site">Сайт</label>
+          <input id="site" name="website" type="url" placeholder="Укажите сайт (если есть)">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Информация о гендерной принадлежности</legend>
+
+        <p class="p-reg">Выберите один вариант</p>
+
+        <div class="form-group-sm">
+          <input id="male" name="gender" type="radio" value="male">
+          <label for="male">Мужской</label>
+        </div>
+
+        <div class="form-group-sm">
+          <input id="female" name="gender" type="radio" value="female">
+          <label for="female">Женский</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Информация о Вашей дате рождения</legend>
+
+        <p class="p-reg">Из выпадающего списка выберите свой год рождения. Если Вашей даты нет в списке - введите год
+          рождения
+          вручную.
+        </p>
+
+        <div>
+          <label class="label-form" for="list">Дата рождения</label>
+          <select id="list" name="birth-year">
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+          </select>
+        </div>
+        <div>
+          <label class="label-form" for="birth-year">Другая дата</label>
+          <input id="birth-year" name="txt-birth-year" type="text" placeholder="Введите свой год">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Инфомрация о Ваших предпочтениях</legend>
+        <p class="p-reg">Выберите Вашу любимую книгу (можно несколько вариантов)</p>
+
+        <div class="form-group-sm">
+          <input checked type="checkbox" name="books" id="part-1" value="part-1">
+          <label for="part-1">Гарри Поттер и Филосовский камень</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="part-2" value="part-2">
+          <label for="part-2">Гарри Поттер и Тайна Комната</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="part-3" value="part-3">
+          <label for="part-3">Гарри Поттер и Узник Азкабана</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="part-4" value="part-4">
+          <label for="part-4">Гарри Поттер и Кубок Огня</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="part-5" value="part-5">
+          <label for="part-5">Гарри Поттер и Орден Феникса</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="part-6" value="part-6">
+          <label for="part-6">Гарри Поттер и Принц-Полукровка</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="part-7" value="part-7">
+          <label for="part-7">Гарри Поттер и Дары Смерти</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="all" value="all">
+          <label for="all">Люблю все книги о Гарри Поттере</label>
+        </div>
+        <div class="form-group-sm">
+          <input type="checkbox" name="books" id="none" value="none">
+          <label for="none">Не люблю/не читал(а) книги о Гарри Поттере</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Дополнительная информация</legend>
+        <div class="form-group">
+          <label for="txt">Расскажите о себе</label>
+          <textarea name="txt" id="txt" cols="40" rows="5" placeholder="Введите здесь текст..."></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Управление формой</legend>
+
+        <div class="form-group">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="reset">Сбросить</button>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="button"
+            onclick="confirm(Ты нажимаешь на все кнопки в интернете, котоыре тебе говорят нажать?)">Нажми
+            сюда</button>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer__copyright">
+      &copy; Grantova
+    </div>
+  </footer>
+
+</body>
+
+</html>

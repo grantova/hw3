@@ -1,0 +1,771 @@
+@font-face {
+  font-family: "HarryPotterRegular";
+  src: url("../fonts/HarryPotterRegular/HarryPotterRegular.eot");
+  src: url("../fonts/HarryPotterRegular/HarryPotterRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HarryPotterRegular/HarryPotterRegular.woff") format("woff"),
+    url("../fonts/HarryPotterRegular/HarryPotterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page-main,
+.page-article,
+.page-catalog,
+.page-contacts,
+.page-gallery,
+.page-navigation,
+.page-registration,
+.page-leaves {
+  background-size: contain;
+  background-color: #cdc5ba;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-navigation {
+  color: #e8e2e2;
+}
+
+.page-main {
+  background-color: #cdc5ba;
+}
+
+.page-article {
+  top: 0;
+  z-index: -1;
+
+  background-image: url(../img/1200px-VOGUE_revista_-_logo.png),
+    url(https://p.favim.com/orig/2018/11/11/vogue-fashion-vogue-magazine-free-time-Favim.com-6566922.png);
+  background-repeat: no-repeat;
+  background-position: 100% 15%, 45% 40%;
+  background-size: 200px, cover;
+
+  justify-content: center;
+  list-style: none;
+}
+
+.page-leaves {
+  background-image: url(https://phonoteka.org/uploads/posts/2021-07/1625320824_18-phonoteka-org-p-esteticheskie-osennie-oboi-oboi-krasivo-21.jpg);
+}
+
+.page-assymetry {
+  background-image: url(https://educon.by/images/article/005.jpg);
+}
+
+.page-brain {
+  background-image: url(https://icdn.lenta.ru/images/2021/10/25/12/20211025120036510/square_1280_6c8c908fc38d84fd6967fd983347bc69.jpeg);
+  background-size: cover;
+}
+
+.page-catalog {
+  background-image: url(https://bigfoto.name/uploads/posts/2022-03/1646883684_1-bigfoto-name-p-risunki-minimalizm-estetika-v-interere-7.jpg);
+  background-position: 0% 45%;
+  background-size: cover;
+}
+
+.page-navigation {
+  background-image: url(https://abrakadabra.fun/uploads/posts/2022-03/1647195211_1-abrakadabra-fun-p-oboi-na-rabochii-stol-garri-potter-khogvar-1.jpg);
+  background-size: 110%;
+  background-attachment: fixed;
+}
+
+.page-registration {
+  background-image: url(https://abrakadabra.fun/uploads/posts/2022-01/1642647541_1-abrakadabra-fun-p-estetika-v-bezhevikh-tonakh-dlya-instagram-5.jpg);
+  background-position: 0% 35%;
+}
+
+.page-contacts {
+  background-image: url(https://kartinkin.net/uploads/posts/2022-03/1648014709_53-kartinkin-net-p-bezhevie-kartinki-estetika-58.jpg);
+  background-size: 100%;
+}
+
+.page-gallery {
+  background-image: url(https://img.freepik.com/free-vector/topographic-contour-lines-map-seamless-pattern_1284-52862.jpg?w=2000);
+  background-size: 20%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  display: block;
+  padding-bottom: 30px;
+}
+
+a,
+.a-nav {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: darkslategrey;
+  font-size: 20px;
+}
+
+p {
+  font-size: 23px;
+}
+
+.footer__copyright,
+.header__navbar,
+.container,
+.container-navbar {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.container,
+.container-navbar {
+  min-height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 120px;
+
+  text-align: justify;
+
+  font-size: 1rem;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container-navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* !!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!! */
+
+.header {
+  position: fixed;
+  display: flex;
+
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #cdc5ba;
+}
+
+.header__navbar-item {
+  display: inline-flex;
+  position: relative;
+  padding: 15px;
+  color: grey;
+
+  border-right: 2px solid grey;
+  align-content: center;
+
+  text-decoration: solid 3px #e8e2e2;
+  color: #39302b;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header__navbar-link {
+  transform: scale(1.2);
+  color: #39302b;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header__navbar-link:hover {
+  position: relative;
+  color: white;
+  transition: 0.2s;
+}
+
+.header__navbar-item:last-of-type {
+  border-right: none;
+}
+
+.header__navbar-link--active {
+  color: white;
+}
+
+/* !!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!! */
+
+.container-main {
+  min-height: 100vh;
+  text-align: justify;
+
+  font-size: 1rem;
+}
+
+.main {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.de%2Fpin%2F539165386642687750%2F&psig=AOvVaw27UM67Mf6LApSgRH5pEMWM&ust=1670289231317000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDeq7Sm4fsCFQAAAAAdAAAAABAN);
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.menu {
+  position: relative;
+  height: 75vh;
+
+  margin: 0 auto;
+  margin-top: 110px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 100%;
+  padding-right: 15px;
+}
+
+.menu-list__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  height: 50%;
+
+  background-size: cover;
+  font-size: 35px;
+
+  text-transform: uppercase;
+  text-align: center;
+  transition: transform 4s ease-out;
+}
+
+.menu-list__item:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px;
+}
+
+.menu-list__link {
+  position: relative;
+  color: white;
+  transform: scale(1.1);
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Courier New', arial;
+}
+
+.menu-list__item--articles {
+  background-image: url(../img/4.jpg);
+}
+
+.menu-list__item--catalog {
+  background-image: url(../img/6.jpg);
+}
+
+.menu-list__item--cont {
+  background-image: url(../img/1.png);
+}
+
+.menu-list__item--gallery {
+  background-image: url(../img/0ea2a72e570f0597dd9e583e3e44bef5.jpg);
+}
+
+.menu-list__item--nav {
+  background-image: url(../img/Снимок\ экрана\ 2022-11-28\ в\ 15.45.57.png);
+}
+
+.menu-list__item--reg {
+  background-image: url(../img/2.jpg);
+}
+
+.menu-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/*  !!!!!!!!!!!!!!!! ARTICLES  !!!!!!!!!!!!!!!! */
+
+.article-h1 {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.article__title {
+  text-align: center;
+  color: #39302b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.article__title-link,
+.article__link {
+  text-decoration: none;
+  color: #241f1d;
+}
+
+.article__title-link {
+  font-size: 1.7rem;
+}
+
+.article__link {
+  font-size: 1.2rem;
+}
+
+.article__description {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.article__link-comments {
+  color: #39302b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.article__link-comments:hover {
+  color: coral;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.article__link:hover {
+  color: coral;
+  text-decoration: none;
+}
+
+.article__title-link:hover {
+  color: coral;
+}
+
+.article-first-letter::first-letter {
+  font-size: 30px;
+  color: orangered;
+}
+
+.comments_margin {
+  margin-bottom: 30px;
+}
+
+.article-1,
+.article-2,
+.article-3 {
+  margin: 35px;
+}
+
+.articles-comment {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.comments_margin {
+  margin-top: 5px;
+}
+
+/*  !!!!!!!!!!!!!!!! CATALOG !!!!!!!!!!!!!!!! */
+
+.catalog-ol {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 2em;
+  font-size: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  text-align: center;
+}
+
+.catalog-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.catalog-list {
+  line-height: 2.5;
+  width: 350px;
+}
+
+.catalog-sublist {
+  font-size: 18px;
+  color: green;
+}
+
+.catalog-item-flowers,
+.catalog-item-food,
+.catalog-item-books {
+  list-style: none;
+  font-size: 22px;
+  align-items: center;
+  text-align: justify;
+}
+
+.catalog-item-flowers {
+  list-style: outside url(../img/imgonline-com-ua-Resize-pDwy1ARNGAmq1V.png);
+}
+
+.catalog-item-food {
+  list-style: outside url(../img/imgonline-com-ua-Resize-Zvp9GBt2ZobpOTCr.png);
+}
+
+.catalog-item-books {
+  list-style: outside url(../img/imgonline-com-ua-Resize-rvhwS9bxP3g-removebg-preview.png);
+}
+
+.catalog-mcdonalds::after {
+  content: url(../img/mcdonalds-2.gif);
+  margin-left: 5px;
+}
+
+/*  !!!!!!!!!!!!!!!! CONTACTS !!!!!!!!!!!!!!!! */
+
+.h2-contacts {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-size: 25px;
+  color: #39302b;
+}
+
+.p-contacts {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.map {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contacts-adress::first-line {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__item label {
+  min-width: 200px;
+}
+
+.contacts .contacts__form button {
+  position: relative;
+  background-color: #cdc5ba;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  height: 40px;
+  width: 130px;
+  margin: 0;
+}
+
+button {
+  margin: 20px 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.contacts__item {
+  padding-top: 20px;
+}
+
+.form-group,
+.p-reg {
+  margin-top: 10px;
+  font-size: 21px;
+  text-align: left;
+}
+
+.p-reg {
+  padding-bottom: 20px;
+}
+
+legend {
+  text-align: center;
+}
+
+/*  !!!!!!!!!!!!!!!! GALLERY !!!!!!!!!!!!!!!! */
+
+.gallery__slides {
+  display: flex;
+}
+
+.gallery__slides-list {
+  flex-basis: 350px;
+
+  width: 350px;
+}
+
+.gallery__slides-pictures {
+  position: relative;
+
+  flex-basis: calc(100% - 350px);
+  flex-grow: 1;
+  text-align: center;
+}
+
+.gallery__slide-item {
+  margin-bottom: 30px;
+  margin-top: 10%;
+  padding-top: 50px;
+  padding-left: 100px;
+
+  margin-bottom: 55px;
+}
+
+.gallery__slide-anchor {
+  font-size: 1.125rem;
+}
+
+.gallery__slide-picture {
+  position: absolute;
+  z-index: -1;
+
+  transition: opacity 1s;
+
+  opacity: 0;
+}
+
+.gallery__slide-picture:first-of-type:not(:target) {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+.gallery__slide-picture:target {
+  z-index: 1;
+
+  opacity: 1;
+}
+
+.gallery__slide-image {
+  width: 50%;
+  margin-right: 20%;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.title-gallery {
+  text-align: center;
+}
+
+/*  !!!!!!!!!!!!!!!! PAGE_NAV !!!!!!!!!!!!!!!! */
+
+.navbar-h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 60px;
+  color: wheat;
+  text-decoration: none;
+  font-family: "HarryPotterRegular";
+}
+
+.navbar-h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+h3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-right: 20px;
+  color: white;
+}
+
+.navbar-chapter {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-chapter-link {
+  padding-top: 20px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+
+.a-nav {
+  color: darkgray;
+  font-size: 21px;
+  list-style: none;
+  text-decoration: none;
+  color: darkgray;
+  font-size: 20px;
+}
+
+.navbar-a-text {
+  list-style: none;
+  text-decoration: none;
+  color: darkgray;
+  font-size: 36px;
+}
+
+a:hover {
+  color: coral;
+}
+
+.nav-text {
+  text-align: justify;
+  z-index: 0;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  opacity: 80%;
+  margin: 0 3%;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+.nav-p {
+  text-align: justify;
+  font-size: 30px;
+}
+
+/*  !!!!!!!!!!!!!!!! REGISTRATION !!!!!!!!!!!!!!!! */
+
+fieldset {
+  max-width: 800px;
+  margin: 25px auto;
+  background-color: rgb(194, 183, 173);
+  opacity: 100%;
+  border-radius: 12px;
+  box-shadow: 5px 10px 40px #241f1d;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.label-form,
+.form-group-sm {
+  text-align: left;
+  font-size: 20px;
+}
+
+legend {
+  font-size: 28px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+/* !!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!! */
+
+.footer {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #cdc5ba;
+}
+
+.footer__copyright {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  flex-grow: 1;
+  height: 100px;
+}

@@ -44,8 +44,8 @@
   top: 0;
   z-index: -1;
 
-  background-image: url(../img/1200px-VOGUE_revista_-_logo.png),
-    url(https://p.favim.com/orig/2018/11/11/vogue-fashion-vogue-magazine-free-time-Favim.com-6566922.png);
+  background-image: url(../img/1200vogue.png),
+    url(../img/vogue-fashion.png);
   background-repeat: no-repeat;
   background-position: 100% 15%, 45% 40%;
   background-size: 200px, cover;
@@ -55,42 +55,45 @@
 }
 
 .page-leaves {
-  background-image: url(https://phonoteka.org/uploads/posts/2021-07/1625320824_18-phonoteka-org-p-esteticheskie-osennie-oboi-oboi-krasivo-21.jpg);
+  background-image: url(../img/leaves.jpg);
+  background-attachment: fixed;
 }
 
 .page-assymetry {
-  background-image: url(https://educon.by/images/article/005.jpg);
+  background-image: url(../img/linkoln.jpg);
+  background-attachment: fixed;
 }
 
 .page-brain {
-  background-image: url(https://icdn.lenta.ru/images/2021/10/25/12/20211025120036510/square_1280_6c8c908fc38d84fd6967fd983347bc69.jpeg);
+  background-image: url(../img/square_1280_6c8c908fc38d84fd6967fd983347bc69.jpeg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-catalog {
-  background-image: url(https://bigfoto.name/uploads/posts/2022-03/1646883684_1-bigfoto-name-p-risunki-minimalizm-estetika-v-interere-7.jpg);
+  background-image: url(../img/1646883684_1-bigfoto-name-p-risunki-minimalizm-estetika-v-interere-7.jpg);
   background-position: 0% 45%;
   background-size: cover;
 }
 
 .page-navigation {
-  background-image: url(https://abrakadabra.fun/uploads/posts/2022-03/1647195211_1-abrakadabra-fun-p-oboi-na-rabochii-stol-garri-potter-khogvar-1.jpg);
+  background-image: url(../img/hp.jpg);
   background-size: 110%;
   background-attachment: fixed;
 }
 
 .page-registration {
-  background-image: url(https://abrakadabra.fun/uploads/posts/2022-01/1642647541_1-abrakadabra-fun-p-estetika-v-bezhevikh-tonakh-dlya-instagram-5.jpg);
+  background-image: url(../img/book.jpg);
   background-position: 0% 35%;
 }
 
 .page-contacts {
-  background-image: url(https://kartinkin.net/uploads/posts/2022-03/1648014709_53-kartinkin-net-p-bezhevie-kartinki-estetika-58.jpg);
+  background-image: url(../img/bg.jpg);
   background-size: 100%;
 }
 
 .page-gallery {
-  background-image: url(https://img.freepik.com/free-vector/topographic-contour-lines-map-seamless-pattern_1284-52862.jpg?w=2000);
+  background-image: url(../img/gallery.jpg);
   background-size: 20%;
 }
 
@@ -223,7 +226,7 @@ p {
 }
 
 .main {
-  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.de%2Fpin%2F539165386642687750%2F&psig=AOvVaw27UM67Mf6LApSgRH5pEMWM&ust=1670289231317000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDeq7Sm4fsCFQAAAAAdAAAAABAN);
+  background-color: #cdc5ba;
   align-items: center;
   padding: 20px 20px;
 }
@@ -298,7 +301,7 @@ p {
 }
 
 .menu-list__item--nav {
-  background-image: url(../img/Снимок\ экрана\ 2022-11-28\ в\ 15.45.57.png);
+  background-image: url(../img/bg-main-1.png);
 }
 
 .menu-list__item--reg {
@@ -395,6 +398,12 @@ p {
   margin-top: 5px;
 }
 
+.article-a {
+  font-size: 25px;
+  color: black;
+  padding-bottom: 10px;
+}
+
 /*  !!!!!!!!!!!!!!!! CATALOG !!!!!!!!!!!!!!!! */
 
 .catalog-ol {
@@ -438,15 +447,15 @@ p {
 }
 
 .catalog-item-flowers {
-  list-style: outside url(../img/imgonline-com-ua-Resize-pDwy1ARNGAmq1V.png);
+  list-style: outside url(../img/rose1.png);
 }
 
 .catalog-item-food {
-  list-style: outside url(../img/imgonline-com-ua-Resize-Zvp9GBt2ZobpOTCr.png);
+  list-style: outside url(../img/food-1.png);
 }
 
 .catalog-item-books {
-  list-style: outside url(../img/imgonline-com-ua-Resize-rvhwS9bxP3g-removebg-preview.png);
+  list-style: outside url(../img/books-1.png);
 }
 
 .catalog-mcdonalds::after {
@@ -614,9 +623,7 @@ legend {
   padding: 10px;
   font-size: 40px;
   color: white;
-}
 
-h3 {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;

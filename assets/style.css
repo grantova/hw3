@@ -14,7 +14,7 @@
 }
 
 body {
-  zoom: 75%
+  zoom: 0.75
 }
 
 .page-main,
@@ -34,10 +34,6 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
-}
-
-.page-navigation {
-  color: #e8e2e2;
 }
 
 .page-main {
@@ -133,15 +129,23 @@ p {
   width: 100%;
   max-width: 1280px;
   min-height: 100vh;
-
   margin-right: auto;
   margin-left: auto;
 
   padding: 60px 30px 160px 30px;
+}
+
+.bg-page {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  padding: 100px 30px 160px 30px;
 
   text-align: justify;
   font-size: 1rem;
-
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -149,13 +153,13 @@ p {
 
 .header {
   display: flex;
-
+  position: fixed;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
   align-items: center;
 
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -170,9 +174,13 @@ p {
   background-color: #cdc5ba;
 }
 
+.header__navbar {
+  max-width: 1280px;
+}
+
+
 .header__navbar-item {
   display: inline-flex;
-  position: relative;
   padding: 15px;
   color: grey;
 
@@ -184,9 +192,11 @@ p {
 
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .header__navbar-link {
+  position: relative;
   transform: scale(1.2);
   color: #39302b;
   text-decoration: none;
@@ -219,7 +229,7 @@ p {
 .main {
   background-color: #cdc5ba;
   align-items: center;
-  padding: 20px 20px;
+  padding: 100px 20px;
 }
 
 .menu {
@@ -370,38 +380,44 @@ p {
   color: orangered;
 }
 
-.comments_margin {
-  margin-bottom: 30px;
-}
-
-.article-1,
-.article-2,
-.article-3 {
+.article-first,
+.article-second,
+.article-third {
   margin: 35px;
 }
 
-.articles-comment {
+
+
+.comments__articles {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 25px;
 }
 
-.comments_margin {
-  margin-top: 5px;
+.comments__margin {
+  margin-bottom: 20px;
 }
 
-.article-a {
+.comments__name {
   font-size: 25px;
   color: black;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.comments__text {
+  margin-bottom: 5px;
 }
 
 /*  !!!!!!!!!!!!!!!! CATALOG !!!!!!!!!!!!!!!! */
 
-.catalog-ol {
+
+
+.catalog__ol {
   display: flex;
   justify-content: space-between;
-  gap: 2em;
-  padding: 1em 2em;
+  gap: 15px;
+  padding: 10px;
   font-size: 20px;
   list-style: none;
   flex-wrap: wrap;
@@ -410,46 +426,45 @@ p {
   padding-top: 80px;
   padding-bottom: 80px;
 
-  text-align: center;
+  text-align: justify;
 }
 
-.catalog-title {
+.catalog__title {
   text-align: center;
   padding-bottom: 20px;
 }
 
-.catalog-list {
+.catalog__list {
   line-height: 2.5;
   width: 350px;
 }
 
-.catalog-sublist {
+.catalog__sublist {
   font-size: 18px;
   color: green;
 }
 
-.catalog-item-flowers,
-.catalog-item-food,
-.catalog-item-books {
+.catalog__item-flowers,
+.catalo__item-food,
+.catalog__item-books {
   list-style: none;
   font-size: 22px;
-  align-items: center;
   text-align: justify;
 }
 
-.catalog-item-flowers {
+.catalog__item-flowers {
   list-style: outside url(../img/rose1.png);
 }
 
-.catalog-item-food {
+.catalog__item-food {
   list-style: outside url(../img/food-1.png);
 }
 
-.catalog-item-books {
+.catalog__item-books {
   list-style: outside url(../img/books-1.png);
 }
 
-.catalog-mcdonalds::after {
+.catalog__item-mcdonalds::after {
   content: url(../img/mcdonalds-2.gif);
   margin-left: 5px;
 }
@@ -460,7 +475,7 @@ p {
   text-align: center;
 }
 
-.contacts-title {
+.contacts__title {
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
@@ -485,17 +500,14 @@ hr {
   border-radius: 10px;
 }
 
-.contacts-adress::first-line {
+.contacts__adress::first-line {
   text-align: center;
   text-transform: uppercase;
 }
 
-.contacts-item {
+.contacts__item {
   display: flex;
   justify-content: space-between;
-}
-
-.contacts-item {
   min-width: 200px;
 }
 
@@ -522,7 +534,7 @@ hr {
   text-align: left;
 }
 
-.p-reg {
+.registration_text {
   padding-bottom: 20px;
   font-size: 21px;
   text-align: left;
@@ -593,7 +605,7 @@ legend {
   text-align: center;
 }
 
-.title-gallery {
+.gallery__title {
   text-align: center;
 }
 
@@ -710,15 +722,16 @@ textarea {
   max-height: 33vh;
 }
 
-legend {
-  transform: translateY(-10px);
+.registration__caption {
+  transform: translateY(-12px);
+  font-size: 23px;
 }
 
 label {
   font-size: 17px;
 }
 
-.p-reg {
+.registration__text {
   font-size: 18px;
 }
 
@@ -743,15 +756,20 @@ label {
   bottom: 0;
   left: 0;
   background-color: #cdc5ba;
+
+  text-align: center;
 }
 
 .footer__copyright {
   font-size: 20px;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
 
+  align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  margin: auto;
   height: 100px;
+
+  max-width: 1280px;
+  min-height: fit-content;
 }

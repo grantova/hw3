@@ -24,154 +24,161 @@
     </ul>
   </div>
 
-  <div class="container">
+  <div class="bg-page">
+    <div class="container">
 
-    <h1>Регистрация</h1>
+      <h1>Регистрация</h1>
 
-    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <div class="registration">
 
-      <fieldset>
-        <legend>Основная информация</legend>
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
 
-        <p class="p-reg">Укажите следующие данные:</p>
+          <fieldset>
+            <legend class="registration__caption">Основная информация</legend>
 
-        <div class="form-group">
-          <label class="label-form" for="surname">Фамилия</label>
-          <input class="input-name" id="surname" name="txt-surname" type="text" placeholder="Ваша фамилия">
-        </div>
-        <div class="form-group">
-          <label class="label-form" for="name">Имя</label>
-          <input id="name" name="txt-name" type="text" placeholder="Ваше имя">
-        </div>
-        <div class="form-group">
-          <label class="label-form" for="lastname">Отчество</label>
-          <input id="lastname" name="txt-lastname" type="text" placeholder="Ваше отчество">
-        </div>
-        <div class="form-group">
-          <label class="label-form" for="photo">Фотография</label>
-          <input id="photo" name="photo" type="file">
-        </div>
-        <div class="form-group">
-          <label class="label-form" for="email">Почта</label>
-          <input id="email" name="email" type="email" placeholder="Электронная почта">
-        </div>
-        <div class="form-group">
-          <label class="label-form" for="password">Пароль</label>
-          <input id="password" name="txt-password" value="" type="password" placeholder="Введите пароль">
-        </div>
-        <div class="form-group">
-          <label class="label-form" for="site">Сайт</label>
-          <input id="site" name="website" type="url" placeholder="Укажите сайт (если есть)">
-        </div>
-      </fieldset>
+            <p class="registration__text">Укажите следующие данные:</p>
 
-      <fieldset>
-        <legend>Информация о гендерной принадлежности</legend>
+            <div class="form-group">
+              <label class="label-form" for="surname">Фамилия</label>
+              <input class="input-name" id="surname" name="txt-surname" type="text" placeholder="Ваша фамилия">
+            </div>
+            <div class="form-group">
+              <label class="label-form" for="name">Имя</label>
+              <input id="name" name="txt-name" type="text" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <label class="label-form" for="lastname">Отчество</label>
+              <input id="lastname" name="txt-lastname" type="text" placeholder="Ваше отчество">
+            </div>
+            <div class="form-group">
+              <label class="label-form" for="photo">Фотография</label>
+              <input id="photo" name="photo" type="file">
+            </div>
+            <div class="form-group">
+              <label class="label-form" for="email">Почта</label>
+              <input id="email" name="email" type="email" placeholder="Электронная почта">
+            </div>
+            <div class="form-group">
+              <label class="label-form" for="password">Пароль</label>
+              <input id="password" name="txt-password" value="" type="password" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+              <label class="label-form" for="site">Сайт</label>
+              <input id="site" name="website" type="url" placeholder="Укажите сайт (если есть)">
+            </div>
+          </fieldset>
 
-        <p class="p-reg">Выберите один вариант</p>
+          <fieldset>
+            <legend class="registration__caption">Информация о гендерной принадлежности</legend>
 
-        <div class="form-group-sm">
-          <input id="male" name="gender" type="radio" value="male">
-          <label for="male">Мужской</label>
-        </div>
+            <p class="registration_text">Выберите один вариант</p>
 
-        <div class="form-group-sm">
-          <input id="female" name="gender" type="radio" value="female">
-          <label for="female">Женский</label>
-        </div>
-      </fieldset>
+            <div class="form-group-sm">
+              <input id="male" name="gender" type="radio" value="male">
+              <label for="male">Мужской</label>
+            </div>
 
-      <fieldset>
-        <legend>Информация о Вашей дате рождения</legend>
+            <div class="form-group-sm">
+              <input id="female" name="gender" type="radio" value="female">
+              <label for="female">Женский</label>
+            </div>
+          </fieldset>
 
-        <p class="p-reg">Из выпадающего списка выберите свой год рождения. Если Вашей даты нет в списке - введите год
-          рождения
-          вручную.
-        </p>
+          <fieldset>
+            <legend class="registration__caption">Информация о Вашей дате рождения</legend>
 
-        <div>
-          <label class="label-form" for="list">Дата рождения</label>
-          <select id="list" name="birth-year">
-            <option value="1991">1991</option>
-            <option value="1992">1992</option>
-            <option value="1993">1993</option>
-            <option value="1994">1994</option>
-            <option value="1995">1995</option>
-            <option value="1996">1996</option>
-            <option value="1997">1997</option>
-            <option value="1998">1998</option>
-            <option value="1999">1999</option>
-          </select>
-        </div>
-        <div>
-          <label class="label-form" for="birth-year">Другая дата</label>
-          <input id="birth-year" name="txt-birth-year" type="text" placeholder="Введите свой год">
-        </div>
+            <p class="registration_text">Из выпадающего списка выберите свой год рождения. Если Вашей даты нет в списке
+              - введите
+              год
+              рождения
+              вручную.
+            </p>
 
-      </fieldset>
+            <div>
+              <label class="label-form" for="list">Дата рождения</label>
+              <select id="list" name="birth-year">
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-form" for="birth-year">Другая дата</label>
+              <input id="birth-year" name="txt-birth-year" type="text" placeholder="Введите свой год">
+            </div>
 
-      <fieldset>
-        <legend>Инфомрация о Ваших предпочтениях</legend>
-        <p class="p-reg">Выберите Вашу любимую книгу (можно несколько вариантов)</p>
+          </fieldset>
 
-        <div class="form-group-sm">
-          <input checked type="checkbox" name="books" id="part-1" value="part-1">
-          <label for="part-1">Гарри Поттер и Филосовский камень</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="part-2" value="part-2">
-          <label for="part-2">Гарри Поттер и Тайна Комната</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="part-3" value="part-3">
-          <label for="part-3">Гарри Поттер и Узник Азкабана</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="part-4" value="part-4">
-          <label for="part-4">Гарри Поттер и Кубок Огня</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="part-5" value="part-5">
-          <label for="part-5">Гарри Поттер и Орден Феникса</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="part-6" value="part-6">
-          <label for="part-6">Гарри Поттер и Принц-Полукровка</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="part-7" value="part-7">
-          <label for="part-7">Гарри Поттер и Дары Смерти</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="all" value="all">
-          <label for="all">Люблю все книги о Гарри Поттере</label>
-        </div>
-        <div class="form-group-sm">
-          <input type="checkbox" name="books" id="none" value="none">
-          <label for="none">Не люблю/не читал(а) книги о Гарри Поттере</label>
-        </div>
-      </fieldset>
+          <fieldset>
+            <legend class="registration__caption">Инфомрация о Ваших предпочтениях</legend>
+            <p class="registration_text">Выберите Вашу любимую книгу (можно несколько вариантов)</p>
 
-      <fieldset>
-        <legend>Дополнительная информация</legend>
-        <div class="form-group">
-          <label for="txt">Расскажите о себе</label>
-          <textarea name="txt" id="txt" cols="40" rows="5" placeholder="Введите здесь текст..."></textarea>
-        </div>
-      </fieldset>
+            <div class="form-group-sm">
+              <input checked type="checkbox" name="books" id="part-1" value="part-1">
+              <label for="part-1">Гарри Поттер и Филосовский камень</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="part-2" value="part-2">
+              <label for="part-2">Гарри Поттер и Тайна Комната</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="part-3" value="part-3">
+              <label for="part-3">Гарри Поттер и Узник Азкабана</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="part-4" value="part-4">
+              <label for="part-4">Гарри Поттер и Кубок Огня</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="part-5" value="part-5">
+              <label for="part-5">Гарри Поттер и Орден Феникса</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="part-6" value="part-6">
+              <label for="part-6">Гарри Поттер и Принц-Полукровка</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="part-7" value="part-7">
+              <label for="part-7">Гарри Поттер и Дары Смерти</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="all" value="all">
+              <label for="all">Люблю все книги о Гарри Поттере</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="books" id="none" value="none">
+              <label for="none">Не люблю/не читал(а) книги о Гарри Поттере</label>
+            </div>
+          </fieldset>
 
-      <fieldset>
-        <legend>Управление формой</legend>
+          <fieldset>
+            <legend class="registration__caption">Дополнительная информация</legend>
+            <div class="form-group">
+              <label for="txt">Расскажите о себе</label>
+              <textarea name="txt" id="txt" cols="40" rows="5" placeholder="Введите здесь текст..."></textarea>
+            </div>
+          </fieldset>
 
-        <div class="form-group">
-          <button class="btn" type="submit">Отправить</button>
-        </div>
-        <div class="form-group">
-          <button class="btn" type="reset">Сбросить</button>
-        </div>
-      </fieldset>
-    </form>
+          <fieldset>
+            <legend class="registration__caption">Управление формой</legend>
 
+            <div class="form-group">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="reset">Сбросить</button>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
